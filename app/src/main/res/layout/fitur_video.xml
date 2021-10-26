@@ -50,7 +50,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
-            app:videoId="BV5gCTP0fFg"
+            app:videoId="7De3HuuxrhI"
+            app:autoPlay="false"
+            app:showFullScreenButton="true" />
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/video6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:videoId="lPlDwC70qYQ"
             app:autoPlay="false"
             app:showFullScreenButton="true" />
 
