@@ -15,7 +15,10 @@ class AwalFragment : Fragment(R.layout.fragment_awal) {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         binding = FragmentAwalBinding.inflate(layoutInflater, container, false)
 
-
+        binding.button3.setOnClickListener { view: View -> view.findNavController().navigate(
+            R.id.action_awalFragment_to_diaryDummy
+        )
+        }
         return binding.root
     }
 
