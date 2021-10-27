@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MySkin">
         <activity
+            android:name=".tips.TricksActivity"
+            android:exported="false" />
+        <activity
+            android:name=".tips.TipsActivity"
+            android:exported="false" />
+        <activity
             android:name=".tips.TipsAndTricks"
             android:exported="false" />
         <activity

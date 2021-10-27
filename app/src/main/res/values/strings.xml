@@ -7,4 +7,9 @@
     <string name="video">Video</string>
     <string name="tips_merawat">Tips Merawat Wajah</string>
     <string name="tricks_merawat">Tricks Mencari Perawatan Wajah</string>
+    <string name="merawat_wajah">Cara Merawat Kulit Wajah Yang Benar</string>
+    <string name="text_tips">1.Gunakan sabun pembersih muka sesuai jenis kulit.\n2.Bersihkan wajah secara rutin\n3.Bersihkan wajah dengan cara yang benar.</string>
+    <string name="text_tips2">4.Gunakan pelembap.\n5.Gunakan sunscreen\n6.Jalani pola hidup sehat.</string>
+    <string name="mencari_skincare">Trick Menentukan Skincare Wajah</string>
+    <string name="text_tricks">1. Cari Produk yang bagus.\n2. Perhatikan tanggal kadaluarsa.\n3. Pilih Skincare yang sesuai kulit.\n4. Baca Kandungan Skincare</string>
 </resources>

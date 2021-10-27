@@ -18,7 +18,6 @@ class AwalFragment : Fragment(R.layout.fragment_awal) {
         binding.button2.setOnClickListener { view: View -> view.findNavController().navigate(
             R.id.action_awalFragment_to_tipsAndTricks
         )
-
         }
         return binding.root
     }
