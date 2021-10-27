@@ -21,6 +21,12 @@ class TipsAndTricks : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val pindah2 = findViewById<ImageView>(R.id.imageViewTrick)
+        pindah2.setOnClickListener {
+            val intent = Intent(this, TricksActivity::class.java)
+            startActivity(intent)
+        }
+
 
     }
 
