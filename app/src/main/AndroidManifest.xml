@@ -11,13 +11,28 @@
         android:theme="@style/Theme.MySkin">
         <activity
             android:name=".tips.TricksActivity"
-            android:exported="false" />
+            android:parentActivityName=".tips.TipsAndTricks"
+            android:exported="false">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tips.TipsAndTricks"/>
+        </activity>
         <activity
             android:name=".tips.TipsActivity"
-            android:exported="false" />
+            android:parentActivityName=".tips.TipsAndTricks"
+            android:exported="false">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tips.TipsAndTricks"/>
+        </activity>
         <activity
             android:name=".tips.TipsAndTricks"
-            android:exported="false" />
+            android:parentActivityName=".MainActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
+        </activity>
         <activity
             android:name=".MainActivity"
             android:exported="true">
