@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".SplashScreenActivity">
 
-    <ImageView
+    <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/imageSplash"
         android:layout_width="238dp"
         android:layout_height="378dp"
@@ -18,5 +18,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/ic_logo"/>
+        tools:src="@drawable/logo"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
