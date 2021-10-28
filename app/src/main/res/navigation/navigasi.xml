@@ -15,6 +15,9 @@
         <action
             android:id="@+id/action_awalFragment_to_tipsAndTricks"
             app:destination="@id/tipsAndTricks" />
+        <action
+            android:id="@+id/action_awalFragment_to_video"
+            app:destination="@id/video" />
     </fragment>
     <activity
         android:id="@+id/diaryDummy"
@@ -26,4 +29,9 @@
         android:name="org.d3ifcool.MySkin.tips.TipsAndTricks"
         android:label="tips_and_tricks"
         tools:layout="@layout/tips_and_tricks" />
+    <fragment
+        android:id="@+id/video"
+        android:name="org.d3ifcool.MySkin.ui.Video"
+        android:label="@string/video"
+        tools:layout="@layout/fitur_video"/>
 </navigation>

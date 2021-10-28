@@ -24,6 +24,11 @@ class AwalFragment : Fragment(R.layout.fragment_awal) {
             R.id.action_awalFragment_to_tipsAndTricks
         )
         }
+
+        binding.button4.setOnClickListener { view: View -> view.findNavController().navigate(
+            R.id.action_awalFragment_to_video
+        )
+        }
         return binding.root
     }
 
