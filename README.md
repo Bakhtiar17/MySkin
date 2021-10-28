@@ -27,9 +27,13 @@ bagus untuk menyembuhkannya + Pennaggung Jawab: Denna Auliya Putri Ambya
 - Video: Menampilkan Video Penjelasan tentang skincare atau kandungan-kandungan yang terdapat pada sebuah skincare. + Pennaggung Jawab: Muhammad Eka Bakhtiar
 
 Screenshot aplikasi (minimal 2):
-Tampilan Utama                                    | Tampilan Tips&Trik                                | Tampilan Video
---------------------------------------------------|---------------------------------------------------|-----------------------------------------------
-<img src="screenshots/menu awal.jpeg" width="200">|<img src="screenshots/Tips&trick.jpeg" width="200">|<img src="screenshots/Video.jpeg" width="200">
+Tampilan Utama                                    | Tampilan Masalah Kulit                                | Tampilan Tips&Trik
+--------------------------------------------------|-------------------------------------------------------|-----------------------------------------------
+<img src="screenshots/menu awal.jpeg" width="200">|<img src="screenshots/masalah.jpeg" width="200">       |<img src="screenshots/Tips&trick.jpeg" width="200">
+
+Tampilan Diary                                    | Tampilan Video                               
+--------------------------------------------------|---------------------------------------------------
+<img src="screenshots/diary.jpeg" width="200">|<img src="screenshots/Video.jpeg" width="200">
 
 
 Link Google Drive (APK + Video Demo):
