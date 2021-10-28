@@ -18,6 +18,30 @@
                 android:value=".diary.DiaryActivity"/>
         </activity>
         <activity
+            android:name=".tips.TricksActivity"
+            android:parentActivityName=".tips.TipsAndTricks"
+            android:exported="false">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tips.TipsAndTricks"/>
+        </activity>
+        <activity
+            android:name=".tips.TipsActivity"
+            android:parentActivityName=".tips.TipsAndTricks"
+            android:exported="false">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tips.TipsAndTricks"/>
+        </activity>
+        <activity
+            android:name=".tips.TipsAndTricks"
+            android:parentActivityName=".MainActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
+        </activity>
+        <activity
             android:name=".MainActivity"/>
         <activity
             android:name=".SplashScreenActivity"

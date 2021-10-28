@@ -19,6 +19,11 @@ class AwalFragment : Fragment(R.layout.fragment_awal) {
             R.id.action_awalFragment_to_diaryDummy
         )
         }
+
+        binding.button2.setOnClickListener { view: View -> view.findNavController().navigate(
+            R.id.action_awalFragment_to_tipsAndTricks
+        )
+        }
         return binding.root
     }
 
