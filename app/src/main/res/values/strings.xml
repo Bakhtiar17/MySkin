@@ -5,4 +5,21 @@
     <string name="tips">Tips And Trick</string>
     <string name="diary">My Diary</string>
     <string name="video">Video</string>
+    <string name="kusam">Kulit Kusam</string>
+    <string name="jerawat">Jerawat di Wajah</string>
+    <string name="flek">Flek Hitam</string>
+    <string name="keriput">Penuaan Dini</string>
+    <string name="masalah_kulit">masalah kulit</string>
+    <string name="jerawat_detail">Jerawat (acne) adalah gangguan pada kulit yang berhubungan dengan produksi minyak (sebum) berlebih.
+        \n Hal tersebut menyebabkan peradangan serta penyumbatan pada pori-pori kulit. Peradangan ditandai dengan munculnya benjolan kecil (yang terkadang berisi nanah) di atas kulit. \n Gangguan kulit ini biasa terdapat di bagian tubuh dengan kelenjar minyak terbanyak, yaitu di wajah, leher, bagian atas dada, dan punggung.
+        \n \n Pada remaja, jerawat lebih sering terjadi pada pria dibanding wanita. Namun saat memasuki usia dewasa muda, jerawat lebih mudah terjadi pada wanita dibanding pria. Umumnya jerawat terjadi di usia 14-17 tahun pada wanita, 16-19 tahun pada pria. \n Walau tak menutup kemungkinan bahwa jerawat juga bisa hadir di usia yang lebih dewasa.
+        Pada dasarnya jerawat bukanlah penyakit berbahaya. Ini adalah kondisi umum yang bisa terjadi pada siapa pun. Meski demikian, jerawat dapat meninggalkan bekas-bekas luka (acne scar), yaitu jaringan parut akibat penyembuhan jerawat yang tidak sempurna. </string>
+    <string name="kusam_detail">Kulit kusam adalah kulit yang tidak terlihat cerah atau berseri-seri, bahkan mungkin terlihat gelap, berminyak, atau mengelupas serta bernoda. \n \n \n Wajah kusam dapat disebabkan oleh berbagai hal, mulai dari perubahan hormon, faktor cuaca, hingga penggunaan produk perawatan kulit wajah yang tidak tepat. Selain itu,
+        kulit wajah yang terlihat kusam juga dapat disebabkan oleh kebersihan kulit wajah yang kurang terjaga.</string>
+    <string name="flek_detail">Flek hitam muncul karena peningkatan produksi melanin di kulit, terutama setelah terpapar sinar matahari atau sinar ultraviolet. Melanin adalah pigmen alami yang menentukan warna kulit seseorang. Semakin banyak kandungan melanin pada kulit, maka semakin gelap kulit orang tersebut.
+        \n Flek hitam muncul saat kulit menyerap sinar ultraviolet, sehingga menyebabkan peningkatan produksi melanin. Selanjutnya, bagian kulit yang memiliki banyak melanin atau mengalami penumpukan melanin, akan berwarna lebih gelap dibandingkan kulit sekitarnya, sehingga tampak seperti bintik-bintik.</string>
+    <string name="keriput_kulit">Salah satu ciri-ciri penuaan dini adalah munculnya kerutan atau keriput serta kulit kendur.
+Hal ini bisa terjadi karena kulit akan memperlambat produksi kolagen sehingga elastisitasnya semakin menghilang saat memasuki usia 30-an.
+Padahal, kolagen berfungsi menjaga kekenyalan kulit. Lemak di bawah kulit, di pipi, dagu, dan hidung Anda pun bisa ikut hilang sehingga membuat kulit wajah semakin kendur.
+Biasanya, Anda bisa melihat tanda penuaan dini, terutama pada area sekitar otot yang sering digunakan, seperti dahi, atau area tubuh yang kerap terpapar sinar matahari langsung. </string>
 </resources>

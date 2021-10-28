@@ -8,5 +8,14 @@
         android:id="@+id/awalFragment"
         android:name="org.d3ifcool.MySkin.ui.AwalFragment"
         android:label="@string/app_name"
-        tools:layout="@layout/fragment_awal"/>
+        tools:layout="@layout/fragment_awal">
+        <action
+            android:id="@+id/action_awalFragment_to_masalah_kulit"
+            app:destination="@id/masalah_kulit" />
+    </fragment>
+    <fragment
+        android:id="@+id/masalah_kulit"
+        android:name="org.d3ifcool.MySkin.ui.masalah_kulit"
+        android:label="masalah_kulit"
+        tools:layout="@layout/masalah_kulit"/>
 </navigation>
