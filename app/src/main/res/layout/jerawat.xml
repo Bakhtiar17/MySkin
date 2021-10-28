@@ -26,8 +26,8 @@
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
-            android:layout_marginTop="50dp"
             android:layout_height="150dp"
+            android:layout_marginTop="50dp"
             android:src="@drawable/jerawat" />
     </RelativeLayout>
 
@@ -49,7 +49,8 @@
             android:layout_marginTop="30dp"
             android:text="@string/jerawat_detail"
             android:textColor="@color/blue"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:textAlignment="center"/>
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 

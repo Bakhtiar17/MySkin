@@ -24,7 +24,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/imageView"
             android:layout_centerInParent="true"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="0dp"
             android:text="Permasalahan Kulit Wajah"
             android:textColor="@color/white"
             android:textSize="24sp"
@@ -43,6 +43,7 @@
         android:columnCount="2">
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/card1"
             android:layout_width="0dp"
             android:layout_margin="10dp"
             app:cardElevation="4dp"
@@ -55,7 +56,6 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginRight="10dp"
                 >
 
                 <ImageView
@@ -64,20 +64,22 @@
                     android:layout_centerInParent="true"
                     android:layout_margin="10dp"
                     android:src="@drawable/kusam" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+
+                <Button
+                    android:id="@+id/but1"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="130dp"
+                    android:layout_marginRight="5dp"
+                    android:backgroundTint="@color/blue"
                     android:text="@string/kusam"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginBottom="20dp"
-                    android:textColor="@color/blue"
-                    android:textStyle="bold"
-                    android:layout_centerInParent="true"
-                    />
+                    android:textColor="@color/white" />
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/card2"
             android:layout_width="0dp"
             android:layout_margin="10dp"
             app:cardElevation="4dp"
@@ -88,28 +90,34 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="10dp">
+                >
 
                 <ImageView
                     android:layout_width="210dp"
                     android:layout_height="160dp"
-                    android:layout_centerInParent="true"
-                    android:layout_margin="10dp"
-                    android:src="@drawable/jerawat" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/jerawat"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginBottom="20dp"
-                    android:textColor="@color/blue"
-                    android:textStyle="bold"
-                    android:layout_centerInParent="true"
-                    />
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="11dp"
+                    android:src="@drawable/jerawat" />
+
+                <Button
+                    android:id="@+id/but2"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="130dp"
+                    android:layout_marginRight="5dp"
+                    android:backgroundTint="@color/blue"
+                    android:text="@string/jerawat"
+                    android:textColor="@color/white" />
+
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/card3"
             android:layout_width="0dp"
             android:layout_margin="10dp"
             app:cardElevation="4dp"
@@ -120,7 +128,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginRight="10dp">
+                >
 
                 <ImageView
                     android:layout_width="200dp"
@@ -128,20 +136,21 @@
                     android:layout_centerInParent="true"
                     android:layout_margin="10dp"
                     android:src="@drawable/flek" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                <Button
+                    android:id="@+id/but3"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="130dp"
+                    android:layout_marginRight="5dp"
+                    android:backgroundTint="@color/blue"
                     android:text="@string/flek"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginBottom="20dp"
-                    android:textColor="@color/blue"
-                    android:textStyle="bold"
-                    android:layout_centerInParent="true"
-                    />
+                    android:textColor="@color/white" />
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/card4"
             android:layout_width="0dp"
             android:layout_margin="10dp"
             app:cardElevation="4dp"
@@ -152,7 +161,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="10dp">
+                >
 
                 <ImageView
                     android:layout_width="200dp"
@@ -160,18 +169,20 @@
                     android:layout_centerInParent="true"
                     android:layout_margin="10dp"
                     android:src="@drawable/keriput" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                <Button
+                    android:id="@+id/but4"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="130dp"
+                    android:layout_marginRight="5dp"
+                    android:backgroundTint="@color/blue"
                     android:text="@string/keriput"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginBottom="20dp"
-                    android:textColor="@color/blue"
-                    android:textStyle="bold"
-                    android:layout_centerInParent="true"
-                    />
+                    android:textColor="@color/white" />
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
+
+
 
     </GridLayout>
 

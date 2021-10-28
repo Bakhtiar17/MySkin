@@ -21,7 +21,8 @@
             android:text="Muncul Flek Hitam ?"
             android:textColor="@color/white"
             android:textSize="24sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:textAlignment="center"/>
 
         <ImageView
             android:id="@+id/imageView"
@@ -49,7 +50,8 @@
             android:layout_marginTop="30dp"
             android:text="@string/flek_detail"
             android:textColor="@color/blue"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:textAlignment="center"/>
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 

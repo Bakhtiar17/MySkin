@@ -15,7 +15,39 @@
     </fragment>
     <fragment
         android:id="@+id/masalah_kulit"
-        android:name="org.d3ifcool.MySkin.ui.masalah_kulit"
+        android:name="org.d3ifcool.MySkin.ui.Masalah_kulit"
         android:label="masalah_kulit"
-        tools:layout="@layout/masalah_kulit"/>
+        tools:layout="@layout/masalah_kulit">
+        <action
+            android:id="@+id/action_masalah_kulit_to_flek"
+            app:destination="@id/flek" />
+        <action
+            android:id="@+id/action_masalah_kulit_to_jerawat"
+            app:destination="@id/jerawat" />
+        <action
+            android:id="@+id/action_masalah_kulit_to_kusam42"
+            app:destination="@id/kusam4" />
+        <action
+            android:id="@+id/action_masalah_kulit_to_keriput"
+            app:destination="@id/keriput" />
+    </fragment>
+    <fragment
+        android:id="@+id/flek"
+        android:name="org.d3ifcool.MySkin.ui.Flek"
+        android:label="Flek" >
+    </fragment>
+    <fragment
+        android:id="@+id/jerawat"
+        android:name="org.d3ifcool.MySkin.ui.Jerawat"
+        android:label="Jerawat" />
+    <fragment
+        android:id="@+id/kusam4"
+        android:name="org.d3ifcool.MySkin.ui.Kusam"
+        android:label="Kusam" />
+    <fragment
+        android:id="@+id/keriput"
+        android:name="org.d3ifcool.MySkin.ui.Keriput"
+        android:label="Keriput" />
+
+
 </navigation>
