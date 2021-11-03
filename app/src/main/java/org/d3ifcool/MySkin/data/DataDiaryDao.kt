@@ -11,4 +11,7 @@ interface DataDiaryDao {
     fun insertData(dataDiary: DataDiary)
     @Query("SELECT * FROM datadiary ORDER BY id")
     fun getData(): LiveData<List<DataDiary>>
+
+    @Query("DELETE FROM datadiary WHERE id IN (:ids)")
+    fun deleteData(ids: List<Int>)
 }
