@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingStart="?dialogPreferredPadding"
+    android:paddingEnd="?dialogPreferredPadding">
+    <EditText
+        android:id="@+id/judulEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/judul" />
+    <EditText
+        android:id="@+id/tanggalEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/tanggal"
+        android:inputType="date" />
+    <EditText
+    android:id="@+id/isiEditText"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="@string/isi" />
+</LinearLayout>

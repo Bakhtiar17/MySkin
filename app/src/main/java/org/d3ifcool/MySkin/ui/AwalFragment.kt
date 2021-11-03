@@ -16,7 +16,7 @@ class AwalFragment : Fragment(R.layout.fragment_awal) {
         binding = FragmentAwalBinding.inflate(layoutInflater, container, false)
 
         binding.button3.setOnClickListener { view: View -> view.findNavController().navigate(
-            R.id.action_awalFragment_to_diaryDummy
+            R.id.action_awalFragment_to_diaryPage
         )
         }
         return binding.root
