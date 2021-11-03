@@ -9,6 +9,8 @@ import org.d3ifcool.MySkin.data.DataDiary
 import org.d3ifcool.MySkin.data.DataDiaryDao
 
 class MainDiaryViewModel(private val db : DataDiaryDao) : ViewModel() {
+    val data = db.getData()
+
     fun insertData(dataDiary: DataDiary) {
         viewModelScope.launch {
             withContext(Dispatchers.IO) {
