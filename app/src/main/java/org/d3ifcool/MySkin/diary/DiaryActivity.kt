@@ -26,6 +26,14 @@ class DiaryActivity: AppCompatActivity(), MainDiaryDialog.DialogListener {
         binding = DiaryPageBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        myAdapter = MainAdapter()
+        with(binding.recyclerView) {
+            addItemDecoration(DividerItemDecoration(context, RecyclerView.VERTICAL))
+            setHasFixedSize(true)
+            adapter = myAdapter
+        }
+
+        viewModel.data.observe(this, { myAdapter.submitList(it) })
         binding.fab.setOnClickListener {
 
             MainDiaryDialog().show(supportFragmentManager, "MainDiaryDialog")
@@ -36,12 +44,6 @@ class DiaryActivity: AppCompatActivity(), MainDiaryDialog.DialogListener {
     override fun processDialog(dataDiary: DataDiary) {
 
         viewModel.insertData(dataDiary)
-        myAdapter = MainAdapter()
-        with(binding.recyclerView) {
-            addItemDecoration(DividerItemDecoration(context, RecyclerView.VERTICAL))
-            setHasFixedSize(true)
-            adapter = myAdapter
-        }
-        viewModel.data.observe(this, { myAdapter.submitList(it) })
+
     }
 }
