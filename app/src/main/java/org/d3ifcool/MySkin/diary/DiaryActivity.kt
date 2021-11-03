@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import org.d3ifcool.MySkin.R
+import org.d3ifcool.MySkin.data.DataDiary
 import org.d3ifcool.MySkin.databinding.DiaryPageBinding
 
 class DiaryActivity: AppCompatActivity(), MainDiaryDialog.DialogListener {
@@ -21,7 +22,8 @@ class DiaryActivity: AppCompatActivity(), MainDiaryDialog.DialogListener {
 
     }
 
-    override fun processDialog() {
-        Log.d("DiaryActivity", "Dialog button clicked!")
+    override fun processDialog(dataDiary: DataDiary) {
+
+        Log.d("DiaryActivity",dataDiary.toString())
     }
 }

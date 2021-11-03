@@ -11,4 +11,6 @@
     <string name="tambah_diary">Tambah Diary</string>
     <string name="simpan">Simpan</string>
     <string name="batal">Batal</string>
+    <string name="judul_wajib_diisi">Judul Wajib Diisi</string>
+    <string name="deskripsi_wajib_diisi">Deskripsi wajib diisi</string>
 </resources>
