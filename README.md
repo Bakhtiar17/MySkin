@@ -37,3 +37,4 @@ Tampilan Diary                                    | Tampilan Video
 
 
 Link Google Drive (APK + Video Demo):
+https://drive.google.com/drive/folders/10WNc3b-hWKZ06DJWQIi1c_XbiDgWRmPf?usp=sharing
