@@ -13,8 +13,8 @@
             android:id="@+id/action_awalFragment_to_masalah_kulit"
             app:destination="@id/masalah_kulit"/>
         <action
-            android:id="@+id/action_awalFragment_to_diaryDummy"
-            app:destination="@id/diaryDummy" />
+            android:id="@+id/action_awalFragment_to_diaryPage"
+            app:destination="@id/diaryPage" />
         <action
             android:id="@+id/action_awalFragment_to_tipsAndTricks"
             app:destination="@id/tipsAndTricks" />
@@ -40,36 +40,9 @@
             android:id="@+id/action_masalah_kulit_to_keriput"
             app:destination="@id/keriput" />
     </fragment>
-    <fragment
-        android:id="@+id/flek"
-        android:name="org.d3ifcool.MySkin.ui.Flek"
-        android:label="Flek" >
-    </fragment>
-    <fragment
-        android:id="@+id/jerawat"
-        android:name="org.d3ifcool.MySkin.ui.Jerawat"
-        android:label="Jerawat" />
-    <fragment
-        android:id="@+id/kusam4"
-        android:name="org.d3ifcool.MySkin.ui.Kusam"
-        android:label="Kusam" />
-    <fragment
-        android:id="@+id/keriput"
-        android:name="org.d3ifcool.MySkin.ui.Keriput"
-        android:label="Keriput" />
     <activity
-        android:id="@+id/diaryDummy"
+        android:id="@+id/diaryPage"
         android:name="org.d3ifcool.MySkin.diary.DiaryActivity"
         android:label="diary"
-        tools:layout="@layout/diary_dummy"/>
-    <activity
-        android:id="@+id/tipsAndTricks"
-        android:name="org.d3ifcool.MySkin.tips.TipsAndTricks"
-        android:label="tips_and_tricks"
-        tools:layout="@layout/tips_and_tricks" />
-    <fragment
-        android:id="@+id/video"
-        android:name="org.d3ifcool.MySkin.ui.Video"
-        android:label="@string/video"
-        tools:layout="@layout/fitur_video"/>
+        tools:layout="@layout/diary_page"/>
 </navigation>

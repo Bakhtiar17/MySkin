@@ -30,4 +30,15 @@
 Hal ini bisa terjadi karena kulit akan memperlambat produksi kolagen sehingga elastisitasnya semakin menghilang saat memasuki usia 30-an.
 Padahal, kolagen berfungsi menjaga kekenyalan kulit. \n \n Lemak di bawah kulit, di pipi, dagu, dan hidung Anda pun bisa ikut hilang sehingga membuat kulit wajah semakin kendur.
 Biasanya, Anda bisa melihat tanda penuaan dini, terutama pada area sekitar otot yang sering digunakan, seperti dahi, atau area tubuh yang kerap terpapar sinar matahari langsung. </string>
+    <string name="judul">Judul Diary</string>
+    <string name="tanggal">Tanggal</string>
+    <string name="isi">Isi Diary..</string>
+    <string name="tambah_diary">Tambah Diary</string>
+    <string name="simpan">Simpan</string>
+    <string name="batal">Batal</string>
+    <string name="judul_wajib_diisi">Judul Wajib Diisi</string>
+    <string name="deskripsi_wajib_diisi">Deskripsi wajib diisi</string>
+    <string name="hapus">Hapus</string>
+    <string name="diary_klik">%1$s diklik!</string>
+    <string name="pesan_hapus">Hapus Diary terpilih?</string>
 </resources>

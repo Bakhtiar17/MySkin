@@ -20,7 +20,7 @@ class AwalFragment : Fragment(R.layout.fragment_awal) {
         ) }
 
         binding.button3.setOnClickListener { view: View -> view.findNavController().navigate(
-            R.id.action_awalFragment_to_diaryDummy
+            R.id.action_awalFragment_to_diaryPage
         )
         }
 
