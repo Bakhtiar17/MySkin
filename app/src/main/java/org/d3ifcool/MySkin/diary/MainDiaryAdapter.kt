@@ -39,13 +39,36 @@ class MainAdapter(
         fun bind(dataDiary: DataDiary) {
             binding.judulTextView.text = dataDiary.judul
             binding.isiTextView.text = dataDiary.isi
-            itemView.setOnLongClickListener { handler.onLongClick() }
+
+            val pos = absoluteAdapterPosition
+            itemView.isSelected = selectionIds.contains(dataDiary.id)
+            itemView.setOnClickListener { handler.onClick(pos, dataDiary) }
+            itemView.setOnLongClickListener { handler.onLongClick(pos) }
 
         }
     }
 
     interface ClickHandler {
-        fun onLongClick() : Boolean
+        fun onClick(position: Int, dataDiary: DataDiary)
+        fun onLongClick(position: Int): Boolean
+
+    }
+
+    private val selectionIds = ArrayList<Int>()
+    fun toggleSelection(pos: Int) {
+        val id = getItem(pos).id
+        if (selectionIds.contains(id))
+            selectionIds.remove(id)
+        else
+            selectionIds.add(id)
+        notifyDataSetChanged()
+    }
+    fun getSelection(): List<Int> {
+        return selectionIds
+    }
+    fun resetSelection() {
+        selectionIds.clear()
+        notifyDataSetChanged()
     }
 
 }

@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.view.ActionMode
 import androidx.lifecycle.ViewModelProvider
@@ -28,17 +29,20 @@ class DiaryActivity: AppCompatActivity(), MainDiaryDialog.DialogListener {
             }
             return false
         }
-        override fun onCreateActionMode(mode: ActionMode?,
-                                        menu: Menu?): Boolean {
+        override fun onCreateActionMode(mode: ActionMode?, menu: Menu?): Boolean {
             mode?.menuInflater?.inflate(R.menu.diary_delete_mode, menu)
             return true
         }
-        override fun onPrepareActionMode(mode: ActionMode?,
-                                         menu: Menu?): Boolean {
+        override fun onPrepareActionMode(mode: ActionMode?, menu: Menu?): Boolean {
+            mode?.title = myAdapter.getSelection().size.toString()
+
             return true
         }
         override fun onDestroyActionMode(mode: ActionMode?) {
+
             actionMode = null
+            myAdapter.resetSelection()
+
         }
     }
 
@@ -49,8 +53,24 @@ class DiaryActivity: AppCompatActivity(), MainDiaryDialog.DialogListener {
     }
 
     private val handler = object : MainAdapter.ClickHandler {
-        override fun onLongClick(): Boolean {
-            if (actionMode != null) return false
+        override fun onClick(position: Int, dataDiary: DataDiary) {
+            if (actionMode != null) {
+                myAdapter.toggleSelection(position)
+                if (myAdapter.getSelection().isEmpty())
+                    actionMode?.finish()
+                else
+                    actionMode?.invalidate()
+                return
+            }
+            val message = getString(R.string.diary_klik, dataDiary.judul)
+            Toast.makeText(this@DiaryActivity, message, Toast.LENGTH_LONG).show()
+        }
+
+        override fun onLongClick(position: Int): Boolean {
+
+        if (actionMode != null) return false
+            myAdapter.toggleSelection(position)
+
             actionMode = startSupportActionMode(actionModeCallback)
             return true
         }
@@ -83,7 +103,7 @@ class DiaryActivity: AppCompatActivity(), MainDiaryDialog.DialogListener {
     }
 
     private fun deleteData() {
-        Log.d("MainActivity", "Delete clicked!")
+        Log.d("MainActivity", "Delete clicked: " + myAdapter.getSelection())
         actionMode?.finish()
     }
 }
