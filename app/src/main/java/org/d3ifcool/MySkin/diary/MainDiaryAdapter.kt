@@ -8,7 +8,9 @@ import androidx.recyclerview.widget.RecyclerView
 import org.d3ifcool.MySkin.data.DataDiary
 import org.d3ifcool.MySkin.databinding.DataDiaryBinding
 
-class MainAdapter : ListAdapter<DataDiary, MainAdapter.ViewHolder>(DIFF_CALLBACK) {
+class MainAdapter(
+    private val handler: ClickHandler
+) : ListAdapter<DataDiary, MainAdapter.ViewHolder>(DIFF_CALLBACK) {
     companion object {
         private val DIFF_CALLBACK = object : DiffUtil.ItemCallback<DataDiary>() {
             override fun areItemsTheSame(
@@ -37,7 +39,13 @@ class MainAdapter : ListAdapter<DataDiary, MainAdapter.ViewHolder>(DIFF_CALLBACK
         fun bind(dataDiary: DataDiary) {
             binding.judulTextView.text = dataDiary.judul
             binding.isiTextView.text = dataDiary.isi
+            itemView.setOnLongClickListener { handler.onLongClick() }
+
         }
+    }
+
+    interface ClickHandler {
+        fun onLongClick() : Boolean
     }
 
 }
