@@ -12,6 +12,8 @@ import androidx.fragment.app.DialogFragment
 import org.d3ifcool.MySkin.R
 import org.d3ifcool.MySkin.data.DataDiary
 import org.d3ifcool.MySkin.databinding.DialogDiaryMainBinding
+import java.text.SimpleDateFormat
+import java.util.*
 
 class MainDiaryDialog : DialogFragment() {
     private lateinit var binding: DialogDiaryMainBinding
@@ -22,6 +24,8 @@ class MainDiaryDialog : DialogFragment() {
         val builder = AlertDialog.Builder(requireContext()).apply {
             setTitle(R.string.tambah_diary)
             setView(binding.root)
+
+
             setPositiveButton(R.string.simpan) { _, _ ->
                 val dataDiary= getData() ?: return@setPositiveButton
                 val listener = requireActivity() as DialogListener
@@ -38,6 +42,9 @@ class MainDiaryDialog : DialogFragment() {
     }
 
     private fun getData(): DataDiary? {
+        val sdf = SimpleDateFormat("dd/M/yyyy hh:mm:ss")
+        val currentDate = sdf.format(Date())
+
         if (binding.judulEditText.text.isEmpty()) {
             showMessage(R.string.judul_wajib_diisi)
             return null
@@ -49,7 +56,8 @@ class MainDiaryDialog : DialogFragment() {
 
         return DataDiary(
             judul = binding.judulEditText.text.toString(),
-            isi= binding.isiEditText.text.toString()
+            isi= binding.isiEditText.text.toString(),
+            tanggal = currentDate
         )
     }
 

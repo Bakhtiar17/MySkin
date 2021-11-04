@@ -1,14 +1,16 @@
 package org.d3ifcool.MySkin.diary
 
+import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.view.ActionMode
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.NavController
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.RecyclerView
 import org.d3ifcool.MySkin.R
@@ -19,6 +21,7 @@ import org.d3ifcool.MySkin.databinding.DiaryPageBinding
 class DiaryActivity: AppCompatActivity(), MainDiaryDialog.DialogListener {
     private lateinit var binding: DiaryPageBinding
     private lateinit var myAdapter: MainAdapter
+    private lateinit var navController: NavController
 
     private var actionMode: ActionMode? = null
     private val actionModeCallback = object : ActionMode.Callback {
@@ -55,6 +58,8 @@ class DiaryActivity: AppCompatActivity(), MainDiaryDialog.DialogListener {
 
     private val handler = object : MainAdapter.ClickHandler {
         override fun onClick(position: Int, dataDiary: DataDiary) {
+
+
             if (actionMode != null) {
                 myAdapter.toggleSelection(position)
                 if (myAdapter.getSelection().isEmpty())
@@ -63,9 +68,18 @@ class DiaryActivity: AppCompatActivity(), MainDiaryDialog.DialogListener {
                     actionMode?.invalidate()
                 return
             }
-            val message = getString(R.string.diary_klik, dataDiary.judul)
-            Toast.makeText(this@DiaryActivity, message, Toast.LENGTH_LONG).show()
+
+            val intent= Intent(this@DiaryActivity, HalamanDiaryActivity::class.java)
+            val judul= dataDiary.judul
+            val isi= dataDiary.isi
+            val tanggal= dataDiary.tanggal
+            intent.putExtra("judul", judul)
+            intent.putExtra("isi", isi)
+            intent.putExtra("tanggal", tanggal)
+            startActivity(intent)
+
         }
+
 
         override fun onLongClick(position: Int): Boolean {
 
@@ -89,7 +103,12 @@ class DiaryActivity: AppCompatActivity(), MainDiaryDialog.DialogListener {
             adapter = myAdapter
         }
 
-        viewModel.data.observe(this, { myAdapter.submitList(it) })
+        viewModel.data.observe(this, {
+            myAdapter.submitList(it)
+            binding.emptyView.visibility = if (it.isEmpty()) View.VISIBLE
+            else View.GONE
+        })
+
         binding.fab.setOnClickListener {
 
             MainDiaryDialog().show(supportFragmentManager, "MainDiaryDialog")
