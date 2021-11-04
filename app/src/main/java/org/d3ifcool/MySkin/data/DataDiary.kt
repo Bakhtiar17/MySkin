@@ -8,5 +8,6 @@ data class DataDiary(
     @PrimaryKey(autoGenerate = true)
     val id: Int= 0,
     val judul: String,
-    val isi: String
+    val isi: String,
+    val tanggal: String
 )

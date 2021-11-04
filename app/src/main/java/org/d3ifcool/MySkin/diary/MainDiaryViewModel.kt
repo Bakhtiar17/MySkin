@@ -1,13 +1,11 @@
 package org.d3ifcool.MySkin.diary
 
 
-import androidx.appcompat.app.AlertDialog
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
-import org.d3ifcool.MySkin.R
 import org.d3ifcool.MySkin.data.DataDiary
 import org.d3ifcool.MySkin.data.DataDiaryDao
 
