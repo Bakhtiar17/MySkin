@@ -9,7 +9,10 @@
         android:name="org.d3ifcool.MySkin.ui.AwalFragment"
         android:label="@string/app_name"
         tools:layout="@layout/fragment_awal">
+
         <action
+            android:id="@+id/action_awalFragment_to_tipsAndTriks"
+            app:destination="@id/tipsAndTriks" />
             android:id="@+id/action_awalFragment_to_masalah_kulit"
             app:destination="@id/masalah_kulit"/>
         <action
@@ -40,6 +43,12 @@
             android:id="@+id/action_masalah_kulit_to_keriput"
             app:destination="@id/keriput" />
     </fragment>
+    <fragment
+        android:id="@+id/tipsAndTriks"
+        android:name="org.d3ifcool.MySkin.tips.TipsAndTriks"
+        android:label="TipsAndTriks"
+        tools:layout="@layout/tips_and_tricks"/>
+
     <activity
         android:id="@+id/tipsAndTricks"
         android:name="org.d3ifcool.MySkin.tips.TipsAndTricks"
