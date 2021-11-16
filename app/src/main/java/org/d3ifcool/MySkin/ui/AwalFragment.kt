@@ -16,7 +16,7 @@ class AwalFragment : Fragment(R.layout.fragment_awal) {
         binding = FragmentAwalBinding.inflate(layoutInflater, container, false)
 
         binding.button2.setOnClickListener { view: View -> view.findNavController().navigate(
-            R.id.action_awalFragment_to_tipsAndTricks
+            R.id.action_awalFragment_to_tipsAndTriks
         )
         }
         return binding.root
