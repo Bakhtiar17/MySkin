@@ -10,9 +10,12 @@ import org.d3ifcool.MySkin.R
 import org.d3ifcool.MySkin.databinding.FragmentAwalBinding
 
 class AwalFragment : Fragment(R.layout.fragment_awal) {
+
+    private var isTablet: Boolean = false
     private lateinit var binding: FragmentAwalBinding
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+        isTablet = resources.getBoolean(R.bool.isTablet)
         binding = FragmentAwalBinding.inflate(layoutInflater, container, false)
 
         binding.button.setOnClickListener { view: View -> view.findNavController().navigate(
