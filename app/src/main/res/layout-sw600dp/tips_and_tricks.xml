@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/judul_tips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/merawat_wajah"
+            android:textStyle="bold"
+            android:textSize="35sp"/>
+
+        <ImageView
+            android:id="@+id/gambartips"
+            android:layout_width="190dp"
+            android:layout_height="118dp"
+            android:layout_gravity="center"
+            android:contentDescription="@null"
+            app:layout_constraintTop_toBottomOf="@+id/judul_tips"
+            app:srcCompat="@mipmap/ic_tips" />
+
+        <TextView
+            android:id="@+id/text_tips"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:text="@string/text_tips"
+            android:textSize="25sp" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="?android:attr/listDivider" />
+
+        <TextView
+            android:id="@+id/judul_tricks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:text="@string/mencari_skincare"
+            android:textStyle="bold"
+            android:textSize="35sp"/>
+
+        <ImageView
+            android:id="@+id/gambartricks"
+            android:layout_width="190dp"
+            android:layout_height="118dp"
+            android:layout_gravity="center"
+            android:contentDescription="@null"
+            app:layout_constraintTop_toBottomOf="@+id/judul_tips"
+            app:srcCompat="@mipmap/ic_trick" />
+
+        <TextView
+            android:id="@+id/text_tricks"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:text="@string/text_tricks"
+            android:textSize="25sp" />
+
+        <View
+            android:id="@+id/divider1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="?android:attr/listDivider" />
+
+        <TextView
+            android:id="@+id/judulKusam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:text="@string/judul_kusam"
+            android:textStyle="bold"
+            android:textSize="35sp"/>
+
+        <ImageView
+            android:id="@+id/gambarkusam"
+            android:layout_width="190dp"
+            android:layout_height="118dp"
+            android:layout_gravity="center"
+            android:contentDescription="@null"
+            app:layout_constraintTop_toBottomOf="@+id/judul_tips"
+            app:srcCompat="@mipmap/ic_kusam"
+            tools:ignore="ImageContrastCheck" />
+
+        <TextView
+            android:id="@+id/text_kusam"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:text="@string/text_kusam"
+            android:textSize="25sp" />
+
+
+    </LinearLayout>
+</ScrollView>

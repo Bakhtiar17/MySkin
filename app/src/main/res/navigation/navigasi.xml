@@ -17,7 +17,7 @@
     <fragment
         android:id="@+id/tipsAndTriks"
         android:name="org.d3ifcool.MySkin.tips.TipsAndTriks"
-        android:label="TipsAndTriks"
+        android:label="Tips And Triks"
         tools:layout="@layout/tips_and_tricks"/>
 
 </navigation>
