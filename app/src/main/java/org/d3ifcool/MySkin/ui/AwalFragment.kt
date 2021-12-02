@@ -15,6 +15,10 @@ class AwalFragment : Fragment(R.layout.fragment_awal) {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         binding = FragmentAwalBinding.inflate(layoutInflater, container, false)
 
+        binding.button0.setOnClickListener { view: View -> view.findNavController().navigate(
+            R.id.action_awalFragment_to_test
+        ) }
+
         binding.button.setOnClickListener { view: View -> view.findNavController().navigate(
             R.id.action_awalFragment_to_masalah_kulit
         ) }
@@ -33,6 +37,7 @@ class AwalFragment : Fragment(R.layout.fragment_awal) {
             R.id.action_awalFragment_to_video
         )
         }
+
         return binding.root
     }
 

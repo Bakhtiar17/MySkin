@@ -10,6 +10,9 @@
         android:label="@string/app_name"
         tools:layout="@layout/fragment_awal">
         <action
+            android:id="@+id/action_awalFragment_to_test"
+            app:destination="@id/test" />
+        <action
             android:id="@+id/action_awalFragment_to_tipsAndTriks"
             app:destination="@id/tipsAndTriks" />
         <action android:id="@+id/action_awalFragment_to_masalah_kulit"
@@ -39,12 +42,24 @@
             android:id="@+id/action_masalah_kulit_to_keriput"
             app:destination="@id/keriput" />
     </fragment>
+
     <fragment
         android:id="@+id/tipsAndTriks"
         android:name="org.d3ifcool.MySkin.tips.TipsAndTriks"
         android:label="Tips And Triks"
         tools:layout="@layout/tips_and_tricks"/>
-
+    <fragment
+        android:id="@+id/rinci"
+        android:name="org.d3ifcool.MySkin.ui.Rinci"
+        android:label="Rinci" />
+    <fragment
+        android:id="@+id/test"
+        android:name="org.d3ifcool.MySkin.ui.Test"
+        android:label="Test" >
+        <action
+        android:id="@+id/action_test_to_rinci"
+        app:destination="@id/rinci" />
+    </fragment>
     <fragment
         android:id="@+id/video"
         android:name="org.d3ifcool.MySkin.ui.Video"

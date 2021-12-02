@@ -19,7 +19,7 @@
     <string name="keriput">Penuaan Dini</string>
     <string name="masalah_kulit">masalah kulit</string>
     <string name="jerawat_detail">Jerawat (acne) adalah gangguan pada kulit yang berhubungan dengan produksi minyak (sebum) berlebih.
-        \n Hal tersebut menyebabkan peradangan serta penyumbatan pada pori-pori kulit. Peradangan ditandai dengan munculnya benjolan kecil (yang terkadang berisi nanah) di atas kulit. \n Gangguan kulit ini biasa terdapat di bagian tubuh dengan kelenjar minyak terbanyak, yaitu di wajah, leher, bagian atas dada, dan punggung.
+        \r\n Hal tersebut menyebabkan peradangan serta penyumbatan pada pori-pori kulit. Peradangan ditandai dengan munculnya benjolan kecil (yang terkadang berisi nanah) di atas kulit. \n Gangguan kulit ini biasa terdapat di bagian tubuh dengan kelenjar minyak terbanyak, yaitu di wajah, leher, bagian atas dada, dan punggung.
         \n \n Pada remaja, jerawat lebih sering terjadi pada pria dibanding wanita. Namun saat memasuki usia dewasa muda, jerawat lebih mudah terjadi pada wanita dibanding pria. Umumnya jerawat terjadi di usia 14-17 tahun pada wanita, 16-19 tahun pada pria. \n Walau tak menutup kemungkinan bahwa jerawat juga bisa hadir di usia yang lebih dewasa.
         Pada dasarnya jerawat bukanlah penyakit berbahaya. Ini adalah kondisi umum yang bisa terjadi pada siapa pun.  </string>
     <string name="kusam_detail">Kulit kusam adalah kulit yang tidak terlihat cerah atau berseri-seri, bahkan mungkin terlihat gelap, berminyak, atau mengelupas serta bernoda. \n \n \n Wajah kusam dapat disebabkan oleh berbagai hal, mulai dari perubahan hormon, faktor cuaca, hingga penggunaan produk perawatan kulit wajah yang tidak tepat. Selain itu,
@@ -28,9 +28,58 @@
     <string name="flek_detail">Flek hitam muncul karena peningkatan produksi melanin di kulit, terutama setelah terpapar sinar matahari atau sinar ultraviolet. Melanin adalah pigmen alami yang menentukan warna kulit seseorang. Semakin banyak kandungan melanin pada kulit, maka semakin gelap kulit orang tersebut.
         \n \n Flek hitam muncul saat kulit menyerap sinar ultraviolet, sehingga menyebabkan peningkatan produksi melanin. Selanjutnya, bagian kulit yang memiliki banyak melanin atau mengalami penumpukan melanin, akan berwarna lebih gelap dibandingkan kulit sekitarnya, sehingga tampak seperti bintik-bintik.</string>
     <string name="keriput_kulit">Salah satu ciri-ciri penuaan dini adalah munculnya kerutan atau keriput serta kulit kendur.
-Hal ini bisa terjadi karena kulit akan memperlambat produksi kolagen sehingga elastisitasnya semakin menghilang saat memasuki usia 30-an.
-Padahal, kolagen berfungsi menjaga kekenyalan kulit. \n \n Lemak di bawah kulit, di pipi, dagu, dan hidung Anda pun bisa ikut hilang sehingga membuat kulit wajah semakin kendur.
-Biasanya, Anda bisa melihat tanda penuaan dini, terutama pada area sekitar otot yang sering digunakan, seperti dahi, atau area tubuh yang kerap terpapar sinar matahari langsung. </string>
+        Hal ini bisa terjadi karena kulit akan memperlambat produksi kolagen sehingga elastisitasnya semakin menghilang saat memasuki usia 30-an.
+        Padahal, kolagen berfungsi menjaga kekenyalan kulit. \n \n Lemak di bawah kulit, di pipi, dagu, dan hidung Anda pun bisa ikut hilang sehingga membuat kulit wajah semakin kendur.
+        Biasanya, Anda bisa melihat tanda penuaan dini, terutama pada area sekitar otot yang sering digunakan, seperti dahi, atau area tubuh yang kerap terpapar sinar matahari langsung. </string>
+    <string name="tes"> Mulai Tes </string>
+    <string name="offer">Kulitmu termasuk jenis yang mana nih?!</string>
+    <string name="off2"> Yuk jawab pertanyaan-pertanyaan dibawah ini sesuai dengan kondisi kulitmu! </string>
+    <string name="q1"> Ketika bangun di pagi hari, gimana kondisi kulit kamu?
+                            a. Berminyak parah!
+                            b. Berminyak di daerah t-zone dan terasa kering di area lainnya.
+                            c. Terasa kering dan butuh segera pakai pelembap!
+                         d. Bengkak dan kemerahan.
+                         e. Terlihat seperti ada jerawat yang baru muncul di malam hari!</string>
+    <string name="q2">Apa yang bakal kita rasakan saat selesai mencuci muka?
+                         a. Terasa bersih, tapi kemudian bakalan ada banyak minyak yang keluar.
+                         b. Terasa bersih, tapi kemudian minyak bakalan memenuhi daerah T-zone.
+                         c. Wajah terasa kering tertarik.
+                        d. Wajah bersih dan enggak terasa kering/berminyak.
+                         e. Keset, lalu berminyak.</string>
+    <string name="q3">Apa masalah kulit yang paling umum kita rasakan?
+                            a. Sebum berlebihan dan pori-pori besar.
+                            b. Pori-pori besar di daeah hidung.
+                            c. Kulit terkelupas.
+                            d. Kulit gatal dan kemerahan, apalagi pas mencoba skincare baru.
+                            e. Jerawat.</string>
+    <string name="q4">Bagaimana kondisi kulit kita di tengah hari?
+                            a. Seperti kilang minyak, butuh touch up makeup.
+                            b. Berminyak di daerah T-zone.
+                            c. Terlihat kusam dan perlu segera diberi pelembap.
+                            d. Kemerahan.
+                            e. Touch up makeup, terutama di daerah berjerawat.</string>
+    <string name="jawab"> Lihat Penjelasan </string>
+    <string name="a1">Jika jawabanmu lebih banyak pilihan A -> Kamu punya kulit berminyak!
+        Produksi sebum yang berlebihan adalah masalah utama kita, yang bisa bikin kulit tampak berminyak dan berpori-pori besar.Untuk mengatasinya, kita bisa mencari produk dengan kandungan oil free.
+        Jangan lupa juga enggak membuat wajah kering, karena sebum bisa terproduksi makin banyak kalau kulit kita makin kering.</string>
+    <string name="a2">Kalau jawaban kita lebih banyak pilihan B ->
+        Kita punya kulit kombinasi!
+        Biasanya masalah kita adalah pori-pori yang besar di daerah t-zone dan kulit yang terasa kering di daerah lainnya.
+        Untuk merawatnya, kita bisa menggunakan pelembap oil-free, gel, atau air yang terasa ringan.
+        Pastikan kita juga kita memakai toner untuk menyeimbangkan pH kulit di seluruh wajah.</string>
+    <string name="a3">Kalau jawaban kita lebih banyak pilihan C ->
+        Kita punya kulit kering!Kulit bakalan terasa tertarik, bahkan terkadang mengelupas, membuat makeup jadi tampak enggak flawless.
+        Solusinya, kita bisa gunakan face oil atau pelembap dengan kandungan creamy yang bisa menyelamatkan kulit, deh.
+    </string>
+    <string name="a4">Kalau jawaban kita lebih banyak pilihan D ->
+        Kita punya kulit sensitif!
+        Kulit kita selalu gampang kemerahan, terasa gatal, terbakar, atau berjerawat.
+        Untuk mengontrolnya, sebaiknya selalu gunakan produk hypoallergenic, ya!</string>
+    <string name="a5">Kalau jawaban kita lebih banyak pilihan E ->
+        Kita punya kulit berjerawat atau acne-prone!
+        Salah satu caranya untuk mengatasi kulit berjerawat adalah dengan menggunakan salicylic acid atau benzoyl peroxide.
+        Pastikan juga jaga makanan kita. Sebisa mungkin hindari makanan yang bisa membuat hormon jadi enggak stabil, seperti susu dan gula.
+        Selain itu, cari makeup dengan kandungan non-comedogenic yang enggak bakal menyumbat pori-pori kulit. </string>
     <string name="judul">Judul Diary</string>
     <string name="tanggal">Tanggal</string>
     <string name="isi">Isi Diary..</string>
@@ -44,6 +93,8 @@ Biasanya, Anda bisa melihat tanda penuaan dini, terutama pada area sekitar otot 
     <string name="pesan_hapus">Hapus Diary terpilih?</string>
     <string name="tidak_ada_diary">Tidak ada Diary</string>
     <string name="edit">Edit</string>
+    <string name="jenis"> Jenis Kulit</string>
+    <string name="end"> So,Kulit wajahmu termasuk jenis apa nih?</string>
 
 
 
