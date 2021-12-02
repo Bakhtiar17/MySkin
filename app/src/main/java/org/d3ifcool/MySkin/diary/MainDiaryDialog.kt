@@ -42,7 +42,7 @@ class MainDiaryDialog : DialogFragment() {
     }
 
     private fun getData(): DataDiary? {
-        val sdf = SimpleDateFormat("dd/M/yyyy hh:mm:ss")
+        val sdf = SimpleDateFormat("dd/M/yyyy hh:mm")
         val currentDate = sdf.format(Date())
 
         if (binding.judulEditText.text.isEmpty()) {

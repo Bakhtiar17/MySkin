@@ -39,6 +39,7 @@ class MainAdapter(
         fun bind(dataDiary: DataDiary) {
             binding.judulTextView.text = dataDiary.judul
             binding.isiTextView.text = dataDiary.isi
+            binding.tanggalTextView.text = dataDiary.tanggal
 
             val pos = absoluteAdapterPosition
             itemView.isSelected = selectionIds.contains(dataDiary.id)

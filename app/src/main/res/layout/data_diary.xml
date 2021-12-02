@@ -10,9 +10,17 @@
         android:id="@+id/judulTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="18sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         tools:text="Judul" />
+
+    <TextView
+        android:id="@+id/tanggalTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        tools:text="10-10-2010" />
     <TextView
         android:id="@+id/isiTextView"
         android:layout_width="match_parent"
