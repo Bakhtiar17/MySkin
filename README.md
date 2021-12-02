@@ -19,6 +19,7 @@ itu dalam satu aplikasi yakni MySkin.
 
 Adapun fitur dari aplikasi ini yaitu:
 
+- jenis kulit: Membantu user menentukan jenis kulit wajah agar memudahkan mendapatkan perawatan yang tepat melalui pertanyaan-pertanyaan yang sesuai dengan ciri-ciri dari jenis kulit wajah + Pennaggung Jawab: Denna Auliya Putri Ambya 
 - Permasalahan Kulit: Menampilkan macam-macam permasalahan kulit
 wajah disertai dengan foto contoh kasus tersebut serta rekomendasi bahan yang
 bagus untuk menyembuhkannya + Pennaggung Jawab: Denna Auliya Putri Ambya 
@@ -34,6 +35,10 @@ Tampilan Utama                                    | Tampilan Masalah Kulit      
 Tampilan Diary                                    | Tampilan Video                               
 --------------------------------------------------|---------------------------------------------------
 <img src="screenshots/diary.jpeg" width="200">|<img src="screenshots/Video.jpeg" width="200">
+
+Tampilan Jenis Klit                               | Tampilan Rinci                          
+--------------------------------------------------|---------------------------------------------------
+<img src="screenshots/test.jpeg" width="200">|<img src="screenshots/hasil.jpeg" width="200">
 
 
 Link Google Drive (APK + Video Demo):
