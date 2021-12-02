@@ -15,7 +15,9 @@ import org.d3ifcool.MySkin.databinding.MasalahKulitBinding
 class Masalah_kulit : Fragment(R.layout.masalah_kulit) {
 
     private lateinit var binding: MasalahKulitBinding
+    private var isTablet: Boolean = false
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+        isTablet = resources.getBoolean(R.bool.isTablet)
         binding = MasalahKulitBinding.inflate(layoutInflater, container, false)
         binding.but3.setOnClickListener { view: View ->
             view.findNavController().navigate(
