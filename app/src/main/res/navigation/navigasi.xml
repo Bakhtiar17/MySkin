@@ -27,7 +27,7 @@
     <fragment
         android:id="@+id/masalah_kulit"
         android:name="org.d3ifcool.MySkin.ui.Masalah_kulit"
-        android:label="masalah_kulit"
+        android:label="Masalah kulit"
         tools:layout="@layout/masalah_kulit">
         <action
             android:id="@+id/action_masalah_kulit_to_flek"
