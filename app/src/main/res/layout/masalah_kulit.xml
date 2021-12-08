@@ -20,6 +20,7 @@
             android:src="@drawable/logo" />
 
         <TextView
+            android:id="@+id/judulMasalah"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/imageView"
@@ -59,6 +60,7 @@
                 >
 
                 <ImageView
+                    android:id="@+id/img1"
                     android:layout_width="200dp"
                     android:layout_height="150dp"
                     android:layout_centerInParent="true"
@@ -96,6 +98,7 @@
                 >
 
                 <ImageView
+                    android:id="@+id/img2"
                     android:layout_width="210dp"
                     android:layout_height="160dp"
                     android:layout_alignParentBottom="true"
@@ -134,11 +137,16 @@
                 >
 
                 <ImageView
+                    android:id="@+id/img3"
                     android:layout_width="200dp"
                     android:layout_height="150dp"
                     android:layout_centerInParent="true"
-                    android:layout_margin="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
                     android:src="@drawable/flek" />
+
                 <Button
                     android:id="@+id/but3"
                     android:layout_width="match_parent"
@@ -167,11 +175,16 @@
                 >
 
                 <ImageView
+                    android:id="@+id/img4"
                     android:layout_width="200dp"
                     android:layout_height="150dp"
                     android:layout_centerInParent="true"
-                    android:layout_margin="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
                     android:src="@drawable/keriput" />
+
                 <Button
                     android:id="@+id/but4"
                     android:layout_width="match_parent"

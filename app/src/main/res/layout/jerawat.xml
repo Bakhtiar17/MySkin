@@ -13,6 +13,7 @@
         android:layout_weight="2">
 
         <TextView
+            android:id="@+id/judulJerawat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/imageView"
@@ -32,6 +33,7 @@
     </RelativeLayout>
 
     <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/textJerawat"
         android:layout_width="match_parent"
         android:layout_height="10dp"
         android:layout_marginLeft="0dp"
@@ -48,9 +50,9 @@
             android:layout_centerInParent="true"
             android:layout_marginTop="30dp"
             android:text="@string/jerawat_detail"
+            android:textAlignment="center"
             android:textColor="@color/blue"
-            android:textStyle="bold"
-            android:textAlignment="center"/>
+            android:textStyle="bold" />
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 
